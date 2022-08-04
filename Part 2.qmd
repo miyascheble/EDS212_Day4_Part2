@@ -1,0 +1,42 @@
+---
+title: "EDS212_Day4_Part2"
+format: html
+editor: visual
+---
+
+```{r}
+#| warning: false
+#| echo: false
+
+library(tidyverse)
+library(palmerpenguins)
+library(GGally)
+library(skimr)
+```
+
+-   To install a package, you need to place the package in parentheses and in quotation marks.
+
+-   hash \| pike
+
+-   warning do not repeat any errors, default will show this when rendered, specific to quarto
+
+-   echo do not repeat any code, default will show this when rendered, specific to quarto
+
+```{r}
+view(penguins)
+```
+
+## Exploratory Data Viz
+
+Check out your data a bit:
+
+```{r}
+#| include: false
+
+#Tell me the column names
+names(penguins)
+
+dim(penguins)
+head(penguins)
+tail(penguins)
+```
